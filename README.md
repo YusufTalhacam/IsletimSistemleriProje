@@ -3,6 +3,7 @@
 Grup Numarası:41</br>
 
 Jar dosyasının çalıştırılması => java -jar process.jar giris.txt  (txt dosyaAdı).</br>
+Program Çalışırken Açılan Txt ler RunTimeExe.get Fonksiyonunun kullanılmasından Dolayı Açılmaktadır.</br>
 
 
 Grup Proje Uyeleri:</br>
