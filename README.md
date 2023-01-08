@@ -6,7 +6,7 @@ Jar dosyasının çalıştırılması => java -jar process.jar giris.txt  (txt d
 
 
 Grup Proje Uyeleri:
-  #Yusuf Talha ÇAM
+  #Yusuf Talha ÇAM</br>
   #Yusuf Cihan GEDİK
   #Yunus Emre KARA
   #Marzooq Ali Hasan MOFTAH
