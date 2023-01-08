@@ -12,13 +12,13 @@ public class Commissioner {
 
     Colors colors = new Colors();
     String renk;
-    int silinenProsesSayısı = 0;
+    int silinenProsesSayisi = 0;
 
     public void mixedSorter(String filePath) throws IOException, InterruptedException {
         int currentTime = 0;
         processes = ProcessReader.readProcessesFromFile(filePath);
 
-        while (silinenProsesSayısı != processes.size()) {
+        while (silinenProsesSayisi!= processes.size()) {
             for (int i = 0; i < processes.size(); i++) {
 
                 if (processes.get(i).arrivalTime == currentTime) {
@@ -72,7 +72,7 @@ public class Commissioner {
                                 + "\tkalan sure: " + userProcess.currentBurstTime + ")"
                 );
                 highPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
                 if (userProcess.priority != 3) {
                     userProcess.priority = userProcess.priority + 1;
@@ -106,7 +106,7 @@ public class Commissioner {
                 );
 
                 highPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
            
 
@@ -146,7 +146,7 @@ public class Commissioner {
                         + "\tkalan sure: " + userProcess.currentBurstTime + ")"
                 );
                 mediumPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
                 if (userProcess.priority != 3) {
                     userProcess.priority = userProcess.priority + 1;
@@ -178,7 +178,7 @@ public class Commissioner {
                 );
 
                 mediumPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
                 if (userProcess.priority != 3) {
                     userProcess.priority = userProcess.priority + 1;
@@ -217,7 +217,7 @@ public class Commissioner {
                         + "\tkalan sure: " + userProcess.currentBurstTime + ")"
                 );
                 mediumPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
                 if (userProcess.priority != 3) {
                     userProcess.priority = userProcess.priority + 1;
@@ -250,7 +250,7 @@ public class Commissioner {
                 );
 
                 lowPriorityQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             } else {
                 if (userProcess.priority != 3) {
                     userProcess.priority = userProcess.priority + 1;
@@ -290,7 +290,7 @@ public class Commissioner {
                                 + "\tKalan sure: " + realTimeProcess.currentBurstTime + ")"
                 );
                 realTimeQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
             }
         } else {
             System.out.println(
@@ -309,7 +309,7 @@ public class Commissioner {
                                 + "\tkalan sure: " + realTimeProcess.currentBurstTime + ")"
                 );
                 realTimeQueue.poll();
-                silinenProsesSayısı++;
+                silinenProsesSayisi++;
 
             }
         }
@@ -335,7 +335,7 @@ public class Commissioner {
                                     + "\tOncelik: " + item.priority
                                     + "\tkalan sure: " + item.currentBurstTime + ")"
                     );
-                    silinenProsesSayısı++;
+                    silinenProsesSayisi++;
                 } else if (item.priority == 1) {
                 	Thread.sleep(350);
                     highPriorityQueue.remove(item);
@@ -345,7 +345,7 @@ public class Commissioner {
                                     + "\tOncelik: " + item.priority
                                     + "\tkalan sure: " + item.currentBurstTime + ")"
                     );
-                    silinenProsesSayısı++;
+                    silinenProsesSayisi++;
                 } else if (item.priority == 2) {
                 	Thread.sleep(350);
                     mediumPriorityQueue.remove(item);
@@ -355,7 +355,7 @@ public class Commissioner {
                                     + "\tOncelik: " + item.priority
                                     + "\tkalan sure: " + item.currentBurstTime + ")"
                     );
-                    silinenProsesSayısı++;
+                    silinenProsesSayisi++;
                 } else if (item.priority == 3) {
                 	Thread.sleep(350);
                     lowPriorityQueue.remove(item);
@@ -365,7 +365,7 @@ public class Commissioner {
                                     + "\tOncelik: " + item.priority
                                     + "\tkalan sure: " + item.currentBurstTime + ")"
                     );
-                    silinenProsesSayısı++;
+                    silinenProsesSayisi++;
                 }
             }
         }
