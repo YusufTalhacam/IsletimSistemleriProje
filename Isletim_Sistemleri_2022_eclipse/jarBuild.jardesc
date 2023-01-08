@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Isletim_Sistemleri_2022_eclipse/process.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Isletim_Sistemleri_2022_eclipse/jarBuild.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=Isletim_Sistemleri_2022_eclipse/src&lt;{Program.java[Program" manifestLocation="/Isletim_Sistemleri_2022_eclipse/manifest" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/Isletim_Sistemleri_2022_eclipse/giris.txt"/>
+        <javaElement handleIdentifier="=Isletim_Sistemleri_2022_eclipse/src"/>
+        <file path="/Isletim_Sistemleri_2022_eclipse/manifest"/>
+        <file path="/Isletim_Sistemleri_2022_eclipse/jarBuild.jardesc"/>
+        <file path="/Isletim_Sistemleri_2022_eclipse/.classpath"/>
+        <file path="/Isletim_Sistemleri_2022_eclipse/.project"/>
+    </selectedElements>
+</jardesc>
